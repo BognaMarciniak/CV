@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hobby</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        img{
+            height: 100px;
+        }
+        body{
+            text-align: center;
+        }
+        table{
+            margin: 0 auto;
+            text-align: center;
+        }
+        img:hover {
+            background-color: #82AAE3;
+        }
+        span[data-descr]:hover::after,
+        span[data-descr]:focus::after {
+        content: attr(data-descr);
+        position: absolute;
+        left: 50px;
+        top: 100px;
+        max-width: 30%;
+        border: 1px #E0144C solid;
+        border-radius: 10px;
+        background-color: #EAFDFC;
+        padding: 12px;
+        color: #E0144C;
+        font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Moje zainteresowania</h3>
+    <p>Śmiało! Najedź na obrazek 😉</p>
+    <table>
+        <tr>
+            <td> <span tabindex="0" data-descr="Moją największą pasją jest koszykówka, którą trenuję od wielu lat. Obecnie w barwach Politechniki Wrocławskiej."><img src="zdjecia/basketball.webp" alt="Koszykówka"></span></td>
+            <td> <span tabindex="0" data-descr="Uwielbiam kryminały! Zarówno książki, jak i podcasty True Crime. W swojej kolekcji mam dużo pozycji zarówno polskich jak i zagranicznych autorów."><img src="zdjecia/book.webp" alt="Książki"></span></td>
+            <td> <span tabindex="0" data-descr="Muzyka towarzyszy mi cały czas. Czy to na słuchawkach czy podczas amatorskiego karaoke. Od Bring Me The Horizon i Bona Joviego, przez polski pop, aż do piosenek z bajek."><img src="zdjecia/nuta.png" alt="Muzyka"></span></td>
+            <td> <span tabindex="0" data-descr="Nie tylko jestem pracowniczką Escape Roomu, ale również zagorzałym fanem tej rozrywki. Na swoim koncie mam około 50 rozwiązanych pokoi, w różnych miastach, a liczba ta ciągle rośnie."><img src="zdjecia/doors.png" alt="Escape"></span></td>
+        </tr>
+        <tr>
+            <td>Koszykówka</td>
+            <td>Kryminały</td>
+            <td>Muzyka</td>
+            <td>Escape room</td>
+        </tr>
+    </table>
+        
+</body>
+</html>
